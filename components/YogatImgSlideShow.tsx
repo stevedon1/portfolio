@@ -1,9 +1,40 @@
-import React from 'react'
+"use client";
+import React from "react";
+import Slider from "react-slick";
 
-export default function YogatImgSlideShow() {
+export default function ImageSlideshow() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
+  const images = [
+    "/images/Snapchat-1405740099.jpg",
+    "/images/me with yoghuts.jpg",
+    "/images/strawberrry.jpg",
+    "/images/3 yoghurts.jpg",
+    "/images/3 mix choco.jpg",
+    "/images/3 flavors.jpg",
+  ];
+
   return (
-    <div>
-      image slide show
+    <div className="w-full max-w-2xl mx-auto">
+      <Slider {...settings}>
+        {images.map((src, index) => (
+          <div key={index}>
+            <img
+              src={src}
+              alt={`Slide ${index + 1}`}
+              className="w-full h-auto"
+            />
+          </div>
+        ))}
+      </Slider>
     </div>
-  )
+  );
 }
