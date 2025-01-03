@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -12,15 +12,15 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="bg-indigo-600  text-white sticky top-0 z-50 shadow-lg">
+    <nav className="bg-indigo-600 text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <a href="/">YourLogo</a>
+          <a href="/">StivDon</a>
         </div>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden text-md md:flex space-x-6">
+        <div className="hidden text-lg md:text-xl md:flex space-x-6">
           <a href="#home" className="hover:text-gray-300">Home</a>
           <a href="#about" className="hover:text-gray-300">About</a>
           <a href="#projects" className="hover:text-gray-300">Projects</a>
@@ -39,13 +39,11 @@ export default function Navbar() {
 
       {/* Mobile Menu (visible when isOpen is true) */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="space-y-4 bg-indigo-700 py-4">
-            <a href="#home" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Home</a>
-            <a href="#about" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">About</a>
-            <a href="#projects" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Projects</a>
-            <a href="#contact" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Contact</a>
-          </div>
+        <div className="absolute top-16 left-0 w-full bg-indigo-700 py-4 z-50">
+          <a href="#home" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Home</a>
+          <a href="#about" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">About</a>
+          <a href="#projects" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Projects</a>
+          <a href="#contact" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Contact</a>
         </div>
       )}
     </nav>
