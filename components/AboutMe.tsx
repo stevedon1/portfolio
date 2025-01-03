@@ -9,12 +9,12 @@ import Events from './Events'
 export default function AboutMe() {
   return (
     <div>
-      {/* <AboutMeTopSection/> */}
-      {/* <Skills/> */}
-      {/* <Events/> */}
+      <AboutMeTopSection/>
+      <Skills/>
+      <Events/>
       <Business/>
-      {/* <Hobbies/> */}
-      {/* <Mentors/> */}
+      <Hobbies/>
+      <Mentors/>
     </div>
   )
 }
