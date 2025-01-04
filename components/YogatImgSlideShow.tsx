@@ -2,7 +2,7 @@
 import React from "react";
 import Slider from "react-slick";
 
-export default function ImageSlideshow() {
+export default function YogatImgSlideShow() {
   const settings = {
     dots: true,
     infinite: true,
@@ -23,14 +23,14 @@ export default function ImageSlideshow() {
   ];
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <div className="relative w-full overflow-hidden">
       <Slider {...settings}>
         {images.map((src, index) => (
-          <div key={index}>
+          <div key={index} className="w-full">
             <img
               src={src}
               alt={`Slide ${index + 1}`}
-              className="w-full h-auto"
+              className="w-full h-auto object-cover rounded-lg"
             />
           </div>
         ))}
@@ -38,4 +38,3 @@ export default function ImageSlideshow() {
     </div>
   );
 }
-

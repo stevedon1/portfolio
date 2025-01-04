@@ -11,6 +11,7 @@ export default function ImageSlideshow() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows: false, // Removes navigation arrows for a cleaner look
   };
 
   const images = [
@@ -20,14 +21,14 @@ export default function ImageSlideshow() {
   ];
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <div className="w-full max-w-3xl mx-auto p-4 bg-white shadow-lg rounded-lg overflow-hidden">
       <Slider {...settings}>
         {images.map((src, index) => (
-          <div key={index}>
+          <div key={index} className="relative">
             <img
               src={src}
               alt={`Slide ${index + 1}`}
-              className="w-full h-auto"
+              className="w-full max-w-full h-48 md:h-64 lg:h-72 object-cover rounded-md"
             />
           </div>
         ))}
