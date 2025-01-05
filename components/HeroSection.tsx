@@ -4,6 +4,7 @@ import React from "react";
 import { loadFull } from "tsparticles"; // Load tsParticles
 import Particles from "react-tsparticles";
 import { ReactTyped } from "react-typed"; // Import react-typed
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -104,12 +105,12 @@ export default function HeroSection() {
           >
             My Projects
           </a>
-          <a
-            href="#contact"
+          <Link
+            href={`contact-me`}
             className="bg-transparent border-2 text-lg border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-indigo-600 transition duration-300"
           >
             Contact Me
-          </a>
+          </Link>
         </div>
       </div>
     </div>

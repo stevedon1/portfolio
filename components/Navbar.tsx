@@ -22,10 +22,10 @@ export default function Navbar() {
 
         {/* Desktop Navigation Links */}
         <div className="hidden text-lg md:text-xl md:flex space-x-6">
-          <a href="#home" className="hover:text-gray-300">Home</a>
+          <Link href="/" className="hover:text-gray-300">Home</Link>
           <a href="#about" className="hover:text-gray-300">About</a>
           <a href="#projects" className="hover:text-gray-300">Projects</a>
-          <a href="#contact" className="hover:text-gray-300">Contact</a>
+          <Link href="contact-me" className="hover:text-gray-300">Contact</Link>
         </div>
 
         {/* Mobile Hamburger Menu */}
@@ -41,10 +41,10 @@ export default function Navbar() {
       {/* Mobile Menu (visible when isOpen is true) */}
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-indigo-700 py-4 z-50">
-          <a href="#home" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Home</a>
+          <Link href="/" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Home</Link>
           <a href="#about" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">About</a>
           <a href="#projects" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Projects</a>
-          <a href="#contact" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Contact</a>
+          <Link href="contact-me" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Contact</Link>
         </div>
       )}
     </nav>
