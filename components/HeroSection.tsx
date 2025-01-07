@@ -99,12 +99,12 @@ export default function HeroSection() {
         
         {/* Buttons */}
         <div className="flex justify-evenly pt-4 mt-4 gap-6">
-          <a
-            href="#projects"
+          <Link
+            href="my-projects"
             className="bg-white text-lg font-bold font-sans text-indigo-600 px-6 py-3 rounded-md hover:bg-indigo-600 hover:text-white transition duration-300"
           >
             My Projects
-          </a>
+          </Link>
           <Link
             href={`contact-me`}
             className="bg-transparent border-2 text-lg border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-indigo-600 transition duration-300"

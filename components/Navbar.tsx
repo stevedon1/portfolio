@@ -23,8 +23,7 @@ export default function Navbar() {
         {/* Desktop Navigation Links */}
         <div className="hidden text-lg md:text-xl md:flex space-x-6">
           <Link href="/" className="hover:text-gray-300">Home</Link>
-          <a href="#about" className="hover:text-gray-300">About</a>
-          <a href="#projects" className="hover:text-gray-300">Projects</a>
+          <Link href="my-projects" className="hover:text-gray-300">Projects</Link>
           <Link href="contact-me" className="hover:text-gray-300">Contact</Link>
         </div>
 
@@ -42,8 +41,7 @@ export default function Navbar() {
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-indigo-700 py-4 z-50">
           <Link href="/" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Home</Link>
-          <a href="#about" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">About</a>
-          <a href="#projects" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Projects</a>
+          <Link href="my-projects" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Projects</Link>
           <Link href="contact-me" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Contact</Link>
         </div>
       )}
