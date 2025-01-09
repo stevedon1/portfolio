@@ -2,7 +2,7 @@
 
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export default function ContactMe() {
   return (
@@ -14,7 +14,24 @@ export default function ContactMe() {
           I'd love to hear from you! Feel free to reach out with any questions, ideas, or opportunities.
         </p>
       </div>
-
+      <div className="flex justify-center gap-4 mt-6">
+        <a
+          href="https://wa.me/254114228361"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-green-500 hover:text-green-600 transition"
+        >
+           <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/steve-dongich"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-700 transition"
+        >
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        </a>
+      </div>
       {/* Contact Form */}
       <form
         className="space-y-4 w-full max-w-lg bg-white p-6 rounded-lg shadow-md"
@@ -68,7 +85,7 @@ export default function ContactMe() {
       {/* Social Media Links */}
       <div className="flex justify-center gap-4 mt-6">
         <a
-          href="https://linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/steve-dongich"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-500 hover:text-indigo-600 transition"
@@ -76,7 +93,7 @@ export default function ContactMe() {
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
         <a
-          href="https://github.com/yourprofile"
+          href="https://github.com/stevedon1"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-500 hover:text-gray-800 transition"
@@ -84,7 +101,7 @@ export default function ContactMe() {
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
         <a
-          href="https://twitter.com/yourprofile"
+          href="https://x.com/SDongich"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-500 hover:text-blue-500 transition"
