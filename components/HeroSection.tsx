@@ -16,7 +16,7 @@ export default function HeroSection() {
           fullScreen: false,
           background: {
             color: {
-              value: "#11054f", // Dark gray background color
+              value: "#11054f", 
             },
           },
           particles: {
@@ -28,7 +28,7 @@ export default function HeroSection() {
               },
             },
             color: {
-              value: "#ffffff", // White particles
+              value: "#ffffff", 
             },
             shape: {
               type: "circle",
@@ -75,7 +75,7 @@ export default function HeroSection() {
             },
           },
         }}
-        init={async (engine: any) => await loadFull(engine)} // Initialize full particles
+        init={async (engine: any) => await loadFull(engine)}
       />
 
       {/* Content */}
@@ -96,8 +96,6 @@ export default function HeroSection() {
               loop={false} // doesn't loop after finishing
             />
         </p>
-        
-        {/* Buttons */}
         <div className="flex justify-evenly pt-4 mt-4 gap-6">
           <Link
             href="my-projects"
