@@ -2,6 +2,7 @@
 
 import React from "react";
 import { loadFull } from "tsparticles"; // Load tsParticles
+import { Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { ReactTyped } from "react-typed"; // Import react-typed
 import Link from "next/link";
@@ -75,7 +76,9 @@ export default function HeroSection() {
             },
           },
         }}
-        init={async (engine: any) => await loadFull(engine)}
+        init={async (engine: Engine) => {
+          await loadFull(engine);
+        }}
       />
 
       {/* Content */}
