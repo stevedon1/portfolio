@@ -28,7 +28,7 @@ export default function AboutMeTopSection() {
           </p>
           <p className="text-gray-600 text-lg leading-relaxed">
             A JavaScript pro. I use JavaScript to build anything. I leverage
-            JavaScript's rich and popular frameworks to make me more productive
+            JavaScripts rich and popular frameworks to make me more productive
             and deliver optimized solutions.
           </p>
           <p className="text-indigo-600 mt-2 text-lg font-semibold">

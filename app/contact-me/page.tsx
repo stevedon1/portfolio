@@ -37,7 +37,7 @@ export default function ContactMe() {
       <div className="text-center mb-8">
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Contact Me</h2>
         <p className="text-lg text-gray-600">
-          I'd love to hear from you! Feel free to reach out with any questions, ideas, or opportunities.
+          I would love to hear from you! Feel free to reach out with any questions, ideas, or opportunities.
         </p>
       </div>
       <div className="flex justify-center gap-4 mt-6">

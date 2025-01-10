@@ -32,7 +32,7 @@ export default function Business() {
             I have 5+ years in the Business World.
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            I tried several types of businesses but ended up with selling yoghurts. It's a good business for me with good management skills.
+            I tried several types of businesses but ended up with selling yoghurts. Its a good business for me with good management skills.
           </p>
           {/* Additional Sections */}
           <div className="mt-8 space-y-4">
