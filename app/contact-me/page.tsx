@@ -1,10 +1,36 @@
 "use client";
 
-import React from "react";
+import React, {useRef} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import emailjs from "emailjs-com";
 
 export default function ContactMe() {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Prevent default form submission
+
+    // Send email using EmailJS
+    emailjs
+      .sendForm(
+        "service_cv0h90q", // Replace with your EmailJS Service ID
+        "template_y3rn0fy", // Replace with your EmailJS Template ID
+        formRef.current!, // Reference to the form element
+        "y-xM7nvnl3Tdnp3VL" // Replace with your EmailJS Public Key
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          alert("Message sent successfully!");
+          formRef.current?.reset(); // Clear form after successful submission
+        },
+        (error) => {
+          console.error("Error sending email:", error.text);
+          alert("Failed to send message. Please try again.");
+        }
+      );
+  };
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col items-center justify-center p-4">
       {/* Header Section */}
@@ -35,10 +61,8 @@ export default function ContactMe() {
       {/* Contact Form */}
       <form
         className="space-y-4 w-full max-w-lg bg-white p-6 rounded-lg shadow-md"
-        onSubmit={(e) => {
-          e.preventDefault(); // Prevent default form submission
-          alert("Form submitted successfully!");
-        }}
+        ref={formRef}
+       onSubmit={sendEmail}
       >
         <input
           type="text"
