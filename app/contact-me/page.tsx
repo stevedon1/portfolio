@@ -11,7 +11,6 @@ export default function ContactMe() {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent default form submission
 
-    // Send email using EmailJS
     emailjs
       .sendForm(
         "service_cv0h90q", // Replace with your EmailJS Service ID
@@ -58,7 +57,6 @@ export default function ContactMe() {
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
       </div>
-      {/* Contact Form */}
       <form
         className="space-y-4 w-full max-w-lg bg-white p-6 rounded-lg shadow-md"
         ref={formRef}
