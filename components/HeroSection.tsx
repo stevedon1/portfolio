@@ -84,7 +84,6 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center px-6">
         <p className="text-lg md:text-xl text-white mb-8">Hi, am Steve,</p>
-        {/* Headline */}
         <h1 className="text-4xl font-serif md:text-6xl font-bold text-white mb-4">
           A Full Stack Developer.
         </h1>
