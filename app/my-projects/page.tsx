@@ -3,7 +3,7 @@ import AccordionComp from '@/components/AccordionComp'
 
 export default function page() {
   return (
-    <div>
+    <div className='min-h-screen'>
       <AccordionComp/>
     </div>
   )
