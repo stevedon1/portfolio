@@ -40,9 +40,9 @@ export default function Navbar() {
       {/* Mobile Menu (visible when isOpen is true) */}
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-indigo-700 py-4 z-50">
-          <Link href="/" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Home</Link>
-          <Link href="my-projects" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Projects</Link>
-          <Link href="contact-me" onClick={closeMenu} className="block text-white text-center hover:text-gray-300">Contact</Link>
+          <Link href="/" onClick={closeMenu} className="block p-2 text-white text-xl text-center hover:text-gray-300">Home</Link>
+          <Link href="my-projects" onClick={closeMenu} className="block p-2 text-white text-xl text-center hover:text-gray-300">Projects</Link>
+          <Link href="contact-me" onClick={closeMenu} className="block p-2 text-white text-xl text-center hover:text-gray-300">Contact</Link>
         </div>
       )}
     </nav>
