@@ -12,7 +12,7 @@ export default function Page() {
       <Accordion type="single" collapsible>
         {/* Parent Accordion */}
         <AccordionItem value="parent">
-          <AccordionTrigger className="text-lg font-bold text-indigo-700 hover:text-indigo-800 transition">
+          <AccordionTrigger className="text-lg bg-indigo-200 p-1 rounded-md font-bold text-indigo-700 hover:text-indigo-800 transition">
             What exactly can I do? <small className="text-gray-400">(click me)</small>
           </AccordionTrigger>
           <AccordionContent className="mt-2 bg-gray-100 p-4 rounded-lg shadow-inner">
