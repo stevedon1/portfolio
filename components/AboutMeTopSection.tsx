@@ -18,7 +18,7 @@ export default function AboutMeTopSection() {
             src="/images/dongich profile.jpg"
             alt="profile pic"
             width={400}
-            height={9}
+            height={200}
             className="rounded-md border-4 border-indigo-500"
           />
         </div>
