@@ -46,7 +46,7 @@ export default function ContactMe() {
       >
         <input
           type="text"
-          name="user_name" // Add name attribute
+          name="name" // Add name attribute
           placeholder="Your Name"
           className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
           required
