@@ -9,7 +9,7 @@ export default function ContactMe() {
   const formRef = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault(); 
 
     emailjs
       .sendForm(
